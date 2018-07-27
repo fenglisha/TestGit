@@ -3,7 +3,8 @@ package com.first.test;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-//测试git,修改下
+//测试git,修改下，我再修改西
+//希望会冲突
 public class DateTest {
 	public static void main(String[] args) {
 
