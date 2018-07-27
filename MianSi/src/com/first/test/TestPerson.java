@@ -2,6 +2,7 @@ package com.first.test;
 
 public class TestPerson {
 	public static void main(String[] args) {
+		// 作为git修改下
 		// equals方法默认就是==，只不过我们一般会equals方法重写
 		Person person = new Person();
 		person.setA(1);
