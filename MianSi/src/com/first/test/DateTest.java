@@ -3,13 +3,13 @@ package com.first.test;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
+//æµ‹è¯•git,ä¿®æ”¹ä¸‹
 public class DateTest {
 	public static void main(String[] args) {
 
-		// »ñÈ¡µ±Ç°Ê±¼ä
+		// è·å–å½“å‰æ—¶é—´
 		Date date = new Date();
-		// ×Ö·û´®×ªÊ±¼ä parse
+		// å­—ç¬¦ä¸²è½¬æ—¶é—´ parse
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		try {
 			dateFormat.parse("2017-06-16 11:03:52");
@@ -18,13 +18,13 @@ public class DateTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		// »ñÈ¡µ±Ç°Ê±¼äµÄÇ°ÎåÌì,getTImeÊÇms,µÃµ½longÀàĞÍÔÙ»»Ëã;
+		// è·å–å½“å‰æ—¶é—´çš„å‰äº”å¤©,getTImeæ˜¯ms,å¾—åˆ°longç±»å‹å†æ¢ç®—;
 		long datelong = date.getTime() - 5 * 24 * 60 * 60 * 1000;
 		Date date5 = new Date(datelong);
 		System.out.println(dateFormat.format(date5));
-		// ·Ö¿ªµÃµ½Ê±¼äµÄÄêÔÂÈÕ,Ö»ÄÜÓÃ×Ö·û´®½ØÈ¡£»
+		// åˆ†å¼€å¾—åˆ°æ—¶é—´çš„å¹´æœˆæ—¥,åªèƒ½ç”¨å­—ç¬¦ä¸²æˆªå–ï¼›
 		String dateString = dateFormat.format(date5);
-		// "yyyy-MM-dd HH:mm:ss";substring:È¡Ç°²»È¡ºó£»
+		// "yyyy-MM-dd HH:mm:ss";substring:å–å‰ä¸å–åï¼›
 		String year = dateString.substring(0, 4);
 		System.out.println(year);
 
